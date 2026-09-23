@@ -170,7 +170,8 @@
     <nav><ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul></nav>
     <div class="nav-right">
@@ -183,7 +184,7 @@
   <div class="wrap hero-inner">
     <div class="hero-text">
       <div class="eyebrow">B.Tech, Engineering Science &middot; IIT Hyderabad</div>
-      <h1>Engineering ideas into working prototypes and systems.</h1>
+      <h1>Building practical systems from engineering and software ideas.</h1>
       <p class="lede">I&#39;m Abinav Srinivas Reddy &mdash; responsible and ambitious, with excellent communication skills. I&#39;m motivated to apply my skills to assigned tasks and learn the techniques required to address new project challenges.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="#projects">View Projects</a>
@@ -191,8 +192,8 @@
         <a class="btn btn-ghost" href="https://github.com/Abinav5607" target="_blank" rel="noopener">GitHub</a>
       </div>
       <div class="chips">
-        <span class="chip">C</span><span class="chip">PHP</span><span class="chip">Python</span>
-        <span class="chip">HTML / CSS</span><span class="chip">RAG / Vector Search</span>
+        <span class="chip">C</span><span class="chip">PHP</span><span class="chip">Python &amp; HTML</span>
+        <span class="chip">RAG / Vector Search</span><span class="chip">AI Helpdesk</span>
       </div>
     </div>
     <div class="avatar-wrap">
@@ -204,15 +205,14 @@
 <section id="about">
   <div class="wrap about-grid">
     <div>
-      <div class="section-head"><span class="num">01</span><h2>About Me</h2></div>
-      <p>I'm a responsible and ambitious student with strong communication skills and a proactive approach to learning. I'm motivated to apply my existing skills to assigned responsibilities while continuously picking up new techniques to address project challenges — whether that's wiring up a magnetic levitation prototype or building a retrieval pipeline for an AI chatbot.</p>
-      <p>I'm currently looking for opportunities that encourage professional growth, hands-on problem-solving, and meaningful contribution to real projects.</p>
+      <div class="section-head"><span class="num">01</span><h2>Career Objective</h2></div>
+      <p>I am responsible and ambitious with excellent communication skills. I am motivated to apply my skills to assigned tasks and learn the techniques required to address project challenges.</p>
     </div>
     <div class="facts">
-      <div class="fact"><span>Studying</span><strong>B.Tech, Engineering Science — IIT Hyderabad</strong></div>
-      <div class="fact"><span>Leadership</span><strong>E-Cell · Elan &amp; Envision · FCC</strong></div>
+      <div class="fact"><span>Degree</span><strong>B.Tech in Engineering Science</strong></div>
+      <div class="fact"><span>Institute</span><strong>IIT Hyderabad</strong></div>
       <div class="fact"><span>Languages</span><strong>English, Telugu, Hindi</strong></div>
-      <div class="fact"><span>Based in</span><strong>Hyderabad, India</strong></div>
+      <div class="fact"><span>GitHub</span><strong>github.com/Abinav5607</strong></div>
     </div>
   </div>
 </section>
@@ -221,33 +221,38 @@
   <div class="wrap">
     <div class="section-head"><span class="num">02</span><h2>Projects</h2></div>
     <div class="project-list">
-
       <div class="card">
-        <h3>Magnetic Levitation Train Prototype</h3>
-        <p>A small-scale maglev train built on an electromagnet-assisted track using N42 neodymium magnets (42 MGOe), coils driven at 24V DC (~200 turns each on quarter-inch steel bolts, ~6A, eight-plus coils), and MOSFET switching protected by 1N4007 flyback diodes. Optical emitter–receiver sensors detect the passing train to trigger automatic coil control, while an added remote-control system enables manual operation and better stopping — with ball bearings replacing friction braking, and a wider, longer, stabilized body to prevent tipping.</p>
-        <div class="tag-row"><span class="tag">Electronics</span><span class="tag">Embedded Control</span><span class="tag">Prototyping</span></div>
+        <h3>Magnetic Levitation Train</h3>
+        <p>Designed and built a small-scale magnetic levitation train prototype using eight electromagnetic coils (~200 turns each on quarter-inch steel bolts, driven at 6A/24V) switched via MOSFETs with 1N4007 flyback diode protection. Track-side optical sensors trigger coil switching as the train passes, while a commutator reverses current direction and a remote control enables manual stop control. N42 neodymium magnets provide lift, and ball bearings replace friction braking to cut heat and wear, with a wide, long-stabilized chassis to prevent tipping.</p>
+        <div class="tag-row"><span class="tag">Electronics</span><span class="tag">Electromagnetics</span><span class="tag">Prototyping</span></div>
       </div>
 
       <div class="card">
-        <h3>Intelligent AI Helpdesk Chatbot — IIIT Hyderabad</h3>
-        <p>A Retrieval-Augmented Generation (RAG) system that lets users search past support issues using natural language instead of exact keyword matches. It connects to IIIT Hyderabad's Redmine issue tracker over an SSH-tunnelled MariaDB connection, generates semantic embeddings of issue data with the Nomic embedding model via Ollama, and stores them in a ChromaDB vector database — so a query is embedded and matched against past issues by meaning, even when the wording is completely different.</p>
-        <div class="tag-row"><span class="tag">RAG</span><span class="tag">Vector Search</span><span class="tag">Python</span></div>
+        <h3>AI Helpdesk Chatbot — IIIT Hyderabad</h3>
+        <p>Created an AI-powered helpdesk chatbot for IIIT Hyderabad that retrieves relevant support issues using natural language instead of exact keyword matches. The system connects to the institute's Redmine issue tracker over an SSH-tunnelled MariaDB connection, generates semantic embeddings of issue data with the Nomic embedding model via Ollama, and stores them in a ChromaDB vector database for similarity search — forming a Retrieval-Augmented Generation (RAG) pipeline that surfaces related past issues for any query.</p>
+        <div class="tag-row"><span class="tag">RAG</span><span class="tag">ChromaDB</span><span class="tag">Ollama</span><span class="tag">Python</span></div>
       </div>
 
       <div class="card">
         <h3>Exam Scheduling System</h3>
-        <p>A PHP-based system that automatically generates and validates examination timetables from course-slot assignments. It detects clashes by comparing student registration data across courses, blocks generation until conflicts are resolved, and applies an iterative pairwise slot-exchange heuristic to minimize consecutive exams — replacing a manual, error-prone process with systematic, algorithmic checks.</p>
-        <div class="tag-row"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Algorithms</span></div>
+        <p>Built a PHP-based exam timetable system that generates and validates examination schedules from course-slot assignments. It detects scheduling clashes by comparing student registration data across courses, blocks timetable generation until conflicts are resolved, and applies an iterative pairwise slot-exchange heuristic to minimize consecutive examinations, rendering the final timetable through a three-stage input, validation, and generation workflow.</p>
+        <div class="tag-row"><span class="tag">PHP</span><span class="tag">Scheduling</span><span class="tag">Algorithms</span></div>
       </div>
-
     </div>
   </div>
 </section>
 
-<section id="workshops">
+<section id="experience">
   <div class="wrap">
-    <div class="section-head"><span class="num">03</span><h2>Workshops &amp; Experience</h2></div>
+    <div class="section-head"><span class="num">03</span><h2>Experience</h2></div>
     <div class="two-col">
+      <div class="list-card">
+        <h3>IT Office — IIIT Hyderabad</h3>
+        <ul>
+          <li>Interned at the IT office of IIIT Hyderabad.</li>
+          <li>Created an intelligent AI Helpdesk chatbot for IIIT Hyderabad.</li>
+        </ul>
+      </div>
       <div class="list-card">
         <h3>Workshops</h3>
         <ul>
@@ -256,32 +261,45 @@
           <li>Campus Case Study Challenge, FCC (IITH)</li>
         </ul>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head"><span class="num">04</span><h2>Skills &amp; Leadership</h2></div>
+    <div class="two-col">
       <div class="list-card">
-        <h3>Internships</h3>
+        <h3>Technical Skills</h3>
         <ul>
-          <li>IT Office, IIIT Hyderabad</li>
+          <li><strong>C</strong> — Proficient</li>
+          <li><strong>PHP</strong> — Proficient</li>
+          <li><strong>Python &amp; HTML</strong> — Basics</li>
+          <li><strong>English</strong> — High fluency</li>
+          <li><strong>Telugu &amp; Hindi</strong> — Proficient</li>
+        </ul>
+      </div>
+      <div class="list-card">
+        <h3>Leadership Roles</h3>
+        <ul>
+          <li>Manager, E-Cell (Entrepreneurship Club)</li>
+          <li>Co-ordinator, Sponsorship Domain, Elan &amp; Envision (Technocultural Fest Club)</li>
+          <li>Manager, Finance and Consulting Club (FCC)</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<section id="education">
+<section id="hobbies">
   <div class="wrap">
-    <div class="section-head"><span class="num">04</span><h2>Education</h2></div>
-    <div class="timeline">
-      <div class="t-item">
-        <div class="t-year">2025 — Present</div>
-        <div><div class="t-title">B.Tech, Engineering Science</div><div class="t-sub">IIT Hyderabad</div></div>
-      </div>
-      <div class="t-item">
-        <div class="t-year">2023 — 2025</div>
-        <div><div class="t-title">Junior College (11–12)</div><div class="t-sub">Fiitjee Junior College, Miyapur</div></div>
-      </div>
-      <div class="t-item">
-        <div class="t-year">2012 — 2023</div>
-        <div><div class="t-title">Schooling (Grades 1–10)</div><div class="t-sub">Delhi Public School, Hyderabad</div></div>
-      </div>
+    <div class="section-head"><span class="num">06</span><h2>Hobbies</h2></div>
+    <div class="list-card">
+      <ul>
+        <li>Playing sports like basketball, badminton, etc.</li>
+        <li>Reading fictional novels</li>
+        <li>Writing reviews of novels on my blog</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -289,7 +307,7 @@
 <section id="contact">
   <div class="wrap contact-grid">
     <div>
-      <div class="section-head"><span class="num">05</span><h2>Contact</h2></div>
+      <div class="section-head"><span class="num">07</span><h2>Contact</h2></div>
       <div class="contact-info">
         <a href="mailto:abinavreddy2007@gmail.com">abinavreddy2007@gmail.com</a>
         <a href="tel:+917386103234">+91 73861 03234</a>
